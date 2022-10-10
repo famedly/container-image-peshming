@@ -2,7 +2,7 @@ build:
   image: docker:latest
   stage: build
   variables:
-    VERSION: "0.4.0"
+    VERSION: "0.5.1"
   services:
     - docker:dind
   before_script:

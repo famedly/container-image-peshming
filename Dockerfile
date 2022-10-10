@@ -1,4 +1,4 @@
-FROM docker.io/voidlinux/voidlinux-musl
+FROM ghcr.io/void-linux/void-linux:latest-thin-bb-x86_64-musl
 ARG VERSION
 RUN xbps-install -Syu xbps && xbps-install -y peshming-${VERSION}_1 curl
 ENTRYPOINT /bin/peshming
